@@ -29,8 +29,8 @@ class ActiveAdmin::ResourceController
     end
   end
 
-  # Disable filters
   def search(chain)
-    chain
+    @search = ActiveAdmin::Mongoid::Adaptor::Search.new(chain, clean_search_params(params[:q]))
   end
+
 end
