@@ -10,13 +10,8 @@ end
 
 ActiveAdmin::ResourceController # autoload
 class ActiveAdmin::ResourceController
-  before_filter :skip_sidebar!
 
   protected
-
-  def skip_sidebar!
-    @skip_sidebar = true
-  end
 
   # Use #desc and #asc for sorting.
   def sort_order(chain)
