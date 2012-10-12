@@ -13,7 +13,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   gem.name          = 'activeadmin-mongoid'
   gem.require_paths = ['lib']
-  gem.version       = ActiveAdmin::Mongoid::VERSION+".1"
+  gem.version       = ActiveAdmin::Mongoid::VERSION+".2"
   gem.license       = 'MIT'
 
   gem.add_runtime_dependency 'mongoid',     '>= 2.4'
