@@ -1,3 +1,3 @@
 require 'active_admin'
 
-require 'views/columns'
+require 'active_admin/views/columns'
