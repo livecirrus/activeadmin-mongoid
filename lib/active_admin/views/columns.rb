@@ -1,7 +1,7 @@
 module ActiveAdmin
   module Views
     class Columns
-      alias :add_child :add_child_without_id
+      alias :add_child_without_id :add_child
 
       def add_child(child)
         @column_count ||= 0
@@ -15,7 +15,7 @@ module ActiveAdmin
     end
 
     class Column
-      alias :add_child :add_child_without_id
+      alias :add_child_without_id :add_child
 
       def add_child(child)
         @panel_count ||= 0
