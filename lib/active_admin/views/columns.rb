@@ -4,7 +4,7 @@ module ActiveAdmin
       alias :build_without_id :build
       
       def build(*args)
-        bild_without_id *args
+        build_without_id *args
         id!
       end
     end
@@ -13,7 +13,7 @@ module ActiveAdmin
       alias :build_without_id :build
       
       def build(*args)
-        bild_without_id *args
+        build_without_id *args
         id!
       end
       
